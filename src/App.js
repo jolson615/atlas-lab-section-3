@@ -5,6 +5,9 @@ import data from './atlas-of-remote-islands.js';
 
 function App() {
   console.log(data);
+  let island1 = data.islands[0]
+  console.log(island1)
+  console.log(island1.name)
   
   return (
     <div>
@@ -16,7 +19,7 @@ function App() {
         <h2 className="section-title">Islands</h2>
         <ul className="cards">
           
-          <Card />
+          <Card name={island1.name} />
           
         </ul>
       </div>
